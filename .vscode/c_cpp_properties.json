@@ -1,9 +1,9 @@
 {
   "configurations": [
     {
-      "name": "WinLibs GCC",
-      "compilerPath": "C:/Users/flynn/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.MCF.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/g++.exe",
-      "intelliSenseMode": "windows-gcc-x64",
+      "name": "Linux GCC",
+      "compilerPath": "/usr/bin/g++",
+      "intelliSenseMode": "linux-gcc-x64",
       "cStandard": "c17",
       "cppStandard": "c++20",
       "includePath": [
