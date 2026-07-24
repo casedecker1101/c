@@ -10,9 +10,14 @@
                 "${file}",
                 "-I${workspaceFolder}/header/C-Turtle",
                 "-o",
+<<<<<<< HEAD
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-lX11",
                 "-lpthread"
+=======
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lgdi32"
+>>>>>>> 7e2a5ee0005941abee448dcd1d7424c75413ca5a
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -34,7 +39,28 @@
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [
+<<<<<<< HEAD
                 "$gcc"
+=======
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "build active C++ file (selected compiler)",
+            "type": "shell",
+            "command": "pwsh",
+            "args": [
+                "-NoProfile",
+                "-Command",
+                "if ('${input:cppCompiler}' -eq 'g++') { & 'C:\\Users\\flynn\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.MCF.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\g++.exe' -g '${file}' -o '${fileDirname}\\${fileBasenameNoExtension}.exe' -lgdi32 } elseif ('${input:cppCompiler}' -eq 'MSVC (cl.exe)') { & cl.exe /nologo /Zi /EHsc '${file}' '/Fe:${fileDirname}\\${fileBasenameNoExtension}.exe' } else { throw 'Unsupported compiler selection.' }"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc",
+                "$msCompile"
+>>>>>>> 7e2a5ee0005941abee448dcd1d7424c75413ca5a
             ]
         },
         {
@@ -47,9 +73,14 @@
                 "${file}",
                 "-I${workspaceFolder}/header/C-Turtle",
                 "-o",
+<<<<<<< HEAD
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-lX11",
                 "-lpthread"
+=======
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lgdi32"
+>>>>>>> 7e2a5ee0005941abee448dcd1d7424c75413ca5a
             ],
             "options": {
                 "cwd": "${fileDirname}"
