@@ -5,7 +5,7 @@
 #define CTURTLE_HEADLESS_WIDTH 800
 #define CTURTLE_HEADLESS_HEIGHT 600
 
-#include <CTurtle.hpp>
+#include "../include/CTurtle.hpp"
 namespace ct = cturtle;
 
 int main() {
@@ -17,6 +17,17 @@ int main() {
     for (int i = 0; i < 200; i++) {
         turtle.forward(i * 4);
         turtle.right(30);
+    }
+    turtle.end_fill();
+    scr.bye();
+}
+    ct::TurtleScreen scr;
+    ct::Turtle turtle(scr);
+    turtle.fillcolor({"purple"})
+    turtle.begin_fill();
+    for (int i = 0; i < 100; i++) {
+        turtle.back(i * 2);
+        turtle.left(20);
     }
     turtle.end_fill();
     scr.bye();

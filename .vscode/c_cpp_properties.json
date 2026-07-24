@@ -7,8 +7,15 @@
       "cStandard": "c17",
       "cppStandard": "c++20",
       "includePath": [
-        "${workspaceFolder}/**"
-      ]
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/header/C-Turtle"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/include",
+          "${workspaceFolder}/header/C-Turtle"
+        ]
+      }
     }
   ],
   "version": 4
