@@ -19,7 +19,6 @@ int main() {
         turtle.right(30);
     }
     turtle.end_fill();
-    scr.bye();
 }
     ct::TurtleScreen scr;
     ct::Turtle turtle(scr);
