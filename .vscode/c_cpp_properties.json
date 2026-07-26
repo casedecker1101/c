@@ -1,8 +1,25 @@
 {
   "configurations": [
     {
+      "name": "Win32",
+      "compilerPath": "g++",
+      "intelliSenseMode": "windows-gcc-x64",
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/header/C-Turtle"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/include",
+          "${workspaceFolder}/header/C-Turtle"
+        ]
+      }
+    },
+    {
       "name": "Linux GCC",
-      "compilerPath": "/usr/bin/g++",
+      "compilerPath": "g++",
       "intelliSenseMode": "linux-gcc-x64",
       "cStandard": "c17",
       "cppStandard": "c++20",
