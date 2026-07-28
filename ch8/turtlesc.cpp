@@ -12,13 +12,24 @@ int main(){
     ct::Turtle turtle(screen);
 
     ct::Polygon upside_down_triangle = {
-        {1, 2},   // First Point
-        {-9,6}, // Second point
-        {5,3}   // 
+        {0,0},      // First Point
+        {-5,-5},    // Second point
+        {5,-5}      // etc.
     };
 
     turtle.shape(upside_down_triangle);
-    turtle.forward(50);
+    
+    // draw a square where each edge is 50 units long
+    for(int i = 0; i < 4; i++){
+        // stamp at the corner of the square
+        int corner_stamp = turtle.stamp();
+
+        turtle.forward(25);
+        turtle.stamp(); // stamp half-way
+        turtle.right(90);
+        turtle.stamp(); // another stamp
+        
+    }
 
     screen.bye();
     return 0;
